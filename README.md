@@ -1,8 +1,8 @@
-# Red Rocks Park & Amphitheater Gem
+# Red Rocks Park & Amphitheatre Gem
 
-This ruby gem scrapes the Red Rocks Park & Amphitheater website and returns the next show on the calendar. Now you'll never have to wonder again, easy-peasy.
+This ruby gem scrapes the Red Rocks Park & Amphitheatre website and returns the next show on the calendar. Now you'll never have to wonder again, easy-peasy.
 
-Located 10 miles west of Denver, the open-air amphitheater sits at 6,450 feet above sea level and seats 9,525 people. Utilized as a concert venue since 1906, notable perfomers include The Beatles, Jimi Hendrix, and The Grateful Dead.
+Located 10 miles west of Denver, the open-air amphitheatre sits at 6,450 feet above sea level and seats 9,525 people. Utilized as a concert venue since 1906, notable perfomers include The Beatles, Jimi Hendrix, and The Grateful Dead.
 
 ## Installation
 
