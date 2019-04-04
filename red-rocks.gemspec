@@ -1,11 +1,10 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "red_rocks/version"
+# require "red_rocks/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "red-rocks"
-  spec.version       = RedRocks::VERSION
+  spec.version       = '0.2.0'
 
   spec.authors       = ["mitchelparish"]
   spec.email         = ["mitchelparish@gmail.com"]
@@ -31,8 +30,8 @@ Gem::Specification.new do |spec|
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-end 
+                        `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+                       end
 
   spec.executables   = ["red-rocks"]
   spec.require_paths = ["lib"]
