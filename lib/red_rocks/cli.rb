@@ -3,7 +3,6 @@ require 'colorize'
 class RedRocks::CLI
 
   def call
-    # RedRocks::Scraper.scrape
     welcome
     show_concert
   end

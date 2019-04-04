@@ -5,13 +5,14 @@ require "red/rocks/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "red-rocks"
-  spec.version       = Red::Rocks::VERSION
+  spec.version       = RedRocks::VERSION
+
   spec.authors       = ["mitchelparish"]
   spec.email         = ["mitchelparish@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Real-time Concert Information for Red Rocks.}
+  spec.description   = %q{Simple web scraper gem that returns the next show at Red Rocks.}
+  spec.homepage      = "https://github.com/mitchelparish/red-rocks"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,7 +34,8 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["red-rocks"]
+  # spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 2.0"
